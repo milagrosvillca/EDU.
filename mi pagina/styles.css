@@ -1,0 +1,176 @@
+/* Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Quicksand:wght@400;500&display=swap');
+
+/* Estilos Globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f7d1cd, #d6a2e8); /* Degradado pastel rosa y lila */
+    color: #333; /* Color gris oscuro para texto principal */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+/* Encabezado con Logo de Fondo */
+.hero-header {
+    position: relative;
+    height: 300px;
+    background: url('loo final.jpg') no-repeat center center/cover; /* Logo de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-header p {
+    font-size: 1.2em;
+}
+
+/* Sección General */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-box {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco translúcido */
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Imágenes de la Galería */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border: 5px solid #f5a623; /* Bordes de color pastel */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de Contacto y Donaciones */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 2px solid #f5a623;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+}
+
+button {
+    background-color: #f5a623;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d18a22;
+}
+
+/* Donaciones */
+.donation-method {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.donate-btn {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #d18a22;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #f7d1cd; /* Rosa pastel */
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .hero-header h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-header p {
+        font-size: 1em;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-image {
+        max-width: 90%;
+    }
+}
